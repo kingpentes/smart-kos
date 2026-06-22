@@ -24,8 +24,8 @@ class RailwaySeeder extends Seeder
             [
                 'name' => 'Super Admin',
                 'password' => bcrypt('password'),
-                'role' => UserRole::ADMIN->value,
-                'status' => UserStatus::ACTIVE->value,
+                'role' => UserRole::Admin->value,
+                'status' => UserStatus::Active->value,
                 'email_verified_at' => now(),
                 'ai_trial_credits_remaining' => 5
             ]
@@ -37,8 +37,8 @@ class RailwaySeeder extends Seeder
             [
                 'name' => 'Pemilik 1',
                 'password' => bcrypt('password'),
-                'role' => UserRole::OWNER->value,
-                'status' => UserStatus::ACTIVE->value,
+                'role' => UserRole::Owner->value,
+                'status' => UserStatus::Active->value,
                 'email_verified_at' => now(),
                 'ai_trial_credits_remaining' => 5
             ]
@@ -55,12 +55,12 @@ class RailwaySeeder extends Seeder
                 'address' => 'Jl. Harapan No. 1',
                 'city' => 'Balikpapan',
                 'district' => 'Balikpapan Selatan',
-                'type' => BoardingHouseType::MIXED->value,
+                'type' => BoardingHouseType::Mixed->value,
                 'latitude' => -1.173656,
                 'longitude' => 116.853037,
                 'price_monthly' => 1500000,
                 'deposit_amount' => 500000,
-                'status' => BoardingHouseStatus::PUBLISHED->value,
+                'status' => BoardingHouseStatus::Published->value,
                 'verified_at' => now(),
             ]
         );
@@ -75,12 +75,12 @@ class RailwaySeeder extends Seeder
                 'address' => 'Jl. Melati No. 2',
                 'city' => 'Balikpapan',
                 'district' => 'Balikpapan Tengah',
-                'type' => BoardingHouseType::MALE->value,
+                'type' => BoardingHouseType::Male->value,
                 'latitude' => -1.200000,
                 'longitude' => 116.800000,
                 'price_monthly' => 1200000,
                 'deposit_amount' => 400000,
-                'status' => BoardingHouseStatus::PUBLISHED->value,
+                'status' => BoardingHouseStatus::Published->value,
                 'verified_at' => now(),
             ]
         );
@@ -95,7 +95,7 @@ class RailwaySeeder extends Seeder
                 'address' => 'Jl. Mawar No. 3',
                 'city' => 'Balikpapan',
                 'district' => 'Balikpapan Kota',
-                'type' => BoardingHouseType::FEMALE->value,
+                'type' => BoardingHouseType::Female->value,
                 'latitude' => -1.250000,
                 'longitude' => 116.820000,
                 'price_monthly' => 2000000,
