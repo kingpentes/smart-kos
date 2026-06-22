@@ -27,7 +27,7 @@ class RailwaySeeder extends Seeder
                 'role' => UserRole::Admin->value,
                 'status' => UserStatus::Active->value,
                 'email_verified_at' => now(),
-                'ai_trial_credits_remaining' => 5
+                'ai_trial_credits_remaining' => 5,
             ]
         );
 
@@ -40,7 +40,7 @@ class RailwaySeeder extends Seeder
                 'role' => UserRole::Owner->value,
                 'status' => UserStatus::Active->value,
                 'email_verified_at' => now(),
-                'ai_trial_credits_remaining' => 5
+                'ai_trial_credits_remaining' => 5,
             ]
         );
 
@@ -100,7 +100,7 @@ class RailwaySeeder extends Seeder
                 'longitude' => 116.820000,
                 'price_monthly' => 2000000,
                 'deposit_amount' => 1000000,
-                'status' => BoardingHouseStatus::PUBLISHED->value,
+                'status' => BoardingHouseStatus::Published->value,
                 'verified_at' => now(),
             ]
         );
